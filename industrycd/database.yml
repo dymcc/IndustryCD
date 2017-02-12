@@ -3,10 +3,9 @@ development: &default
   encoding: unicode
   database: industry_development
   pool: 5
-  username: <%= ENV.fetch('DB_USERNAME', 'industry') %>
-  password: <%= ENV.fetch('DB_PASSWORD', 'industry') %>
-  host: localhost
-  port: 5432
+  username: postgres
+  password: 
+  host: db
  
 test: &test
   <<: *default
